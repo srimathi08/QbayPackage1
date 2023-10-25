@@ -1,0 +1,34 @@
+<template>
+    <div class="timesheet">
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name="Timesheet__c"
+            layout-type="Full"
+            columns="2"
+            onsuccess={handleSuccess}
+        >
+            <!-- First Column -->
+            <lightning-layout multiple-rows="true">
+                <lightning-layout-item size="6">
+                    <lightning-input-field field-name={fields.NAME_FIELD.fieldApiName} value={name}></lightning-input-field>
+                    <lightning-input-field field-name={fields.EMPLOYEEID_FIELD.fieldApiName} value={employeeId}></lightning-input-field>
+                    <lightning-input-field field-name={fields.PROJECT_FIELD.fieldApiName} required="true"></lightning-input-field>
+                    <lightning-input-field field-name={fields.WORKDONE_FIELD.fieldApiName}></lightning-input-field>
+                    <!-- <lightning-input-field field-name={fields.EMPLOYEENAME.fieldApiName} value={parentRecId}></lightning-input-field> -->
+                </lightning-layout-item>
+                <!-- Second Column -->
+                <lightning-layout-item size="6">
+                    <lightning-input-field field-name={fields.DESCRIPTION_FIELD.fieldApiName}></lightning-input-field>
+                    <lightning-input-field field-name={fields.TOTAL_HOURS.fieldApiName}></lightning-input-field>
+                    <lightning-input-field field-name={fields.DATE.fieldApiName} required="true"></lightning-input-field>
+                    <lightning-input-field field-name={fields.STATUS_FIELD.fieldApiName}></lightning-input-field>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <div class="slds-m-top_medium">
+                <lightning-button type="submit" label="Save"></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </div>
+    <c-timesheet-preview-table user-name={name}></c-timesheet-preview-table>
+</template>

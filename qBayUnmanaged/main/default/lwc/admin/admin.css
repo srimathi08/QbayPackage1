@@ -1,0 +1,47 @@
+/* myComponent.css */
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f6f9;
+    border-radius: 0.5rem;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.search-button {
+    background-color: #0070d2;
+    color: white;
+}
+
+.download-button {
+    background-color: #0070d2;
+}
+
+/* Add some effects to the Download button */
+.search-button, .download-button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-button:hover, .download-button:hover {
+    transform: scale(1.1);
+}
+
+lightning-datatable {
+    width: 100%;
+}

@@ -1,0 +1,11 @@
+.general{
+    background-color: rgb(253, 253, 253);
+    font-weight: bold;
+    /* background-image: linear-gradient(to right,#a0d2eb,#e5eaf5,#845bb3 100%); */
+    background-color: #9ec6c9;
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+    left: -100px;
+    border-radius: 10px;
+}

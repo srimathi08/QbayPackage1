@@ -1,0 +1,29 @@
+<template>
+  <div>
+      <template if:true={isFirstComponentVisible}>
+          <canvas></canvas>
+          <div class="container">
+              <div class="login-box">
+                  <div class="logo">
+                      <img if:true={Qbaylogo} src={Qbaylogo} alt="Company Logo" />
+                  </div>
+                  <div class="controls">
+                      <input type="text" name="username" placeholder="Username" value={username} class="Validate" onchange={handleUsernameChange} required />
+                      <input type="password" name="password" placeholder="Password" value={password} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onchange={handlePasswordChange} required />
+                      <button type="button" class="btn btn-custom" onclick={handleLogin}>Login</button>
+                      <button type="button" class="btn btn-custom" onclick={showSecondComponent}>Sign up</button>
+                      <template if:true={error}>
+                          <div class="error-message">
+                              <p class="error">{error}</p>
+                          </div>
+                      </template>
+                  </div>
+              </div>
+          </div>
+      </template>
+      
+      <template if:false={isFirstComponentVisible}>
+          <c-q-bportal></c-q-bportal>
+      </template>
+  </div>
+</template>

@@ -1,0 +1,32 @@
+<template>
+    <div class="education">
+        
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name="User__c"
+            layout-type="Full"
+            columns="2"
+            onsuccess={handleSuccess}>
+            <lightning-layout multiple-rows="true">
+                <!-- First Column -->
+                <lightning-layout-item size="6">
+                    <!-- <lightning-input-field field-name={fields.TENTH_STREAM.fieldApiName} value={tenthstm}></lightning-input-field> -->
+                    <lightning-input-field field-name={fields.TENTHTH_PERCENTAGE.fieldApiName} value={tenthst}></lightning-input-field>
+                    <lightning-input-field field-name={fields.TWELVETH_STREAM.fieldApiName} value={twelvethstm}></lightning-input-field>
+                    <lightning-input-field field-name={fields.TWELVETH_PERCENTAGE.fieldApiName} value={twelvestr}></lightning-input-field>
+                </lightning-layout-item>
+                <!-- Second Column -->
+                <lightning-layout-item size="6">
+                    <lightning-input-field field-name={fields.UG_DEGREE.fieldApiName} value={ugdeg}></lightning-input-field>
+                    <lightning-input-field field-name={fields.UG_PERCENTAGE.fieldApiName} value={ugper}></lightning-input-field>
+                    <lightning-input-field field-name={fields.PG_DEGREE.fieldApiName} value={pgdeg}></lightning-input-field>
+                    <lightning-input-field field-name={fields.PG_PERCENTAGE.fieldApiName} value={pgper}></lightning-input-field>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <div class="slds-m-top_medium">
+                <!-- <lightning-button variant="brand" type="submit" label="Save"></lightning-button> -->
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-button label="Get Location" onclick={handleClick}></lightning-button>
+    <template if:true={location}>
+        <p>Latitude: {location.latitude}</p>
+        <p>Longitude: {location.longitude}</p>
+        <p>City: {location.city}</p>
+        <p>State: {location.state}</p>
+    </template>
+</template>

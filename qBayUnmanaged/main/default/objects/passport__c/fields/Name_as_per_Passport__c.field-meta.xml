@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_as_per_Passport__c</fullName>
+    <description>Name As per passport</description>
+    <externalId>false</externalId>
+    <formula>First_Name__c &amp; &quot; &quot; &amp; Last_name__c &amp; &quot; &quot; &amp; Surname__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Name As per passport</inlineHelpText>
+    <label>Name as per Passport</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

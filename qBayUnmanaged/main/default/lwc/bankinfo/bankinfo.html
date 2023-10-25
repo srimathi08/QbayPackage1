@@ -1,0 +1,51 @@
+<template>
+
+    <div class="bank">
+
+        <lightning-record-edit-form
+
+            record-id={recordId}
+
+            object-api-name="User__c"
+
+            layout-type="Full"
+
+            columns="2"
+
+            onsuccess={handleSuccess}>
+
+            <lightning-layout multiple-rows="true">
+
+                <!-- First Column -->
+
+                <lightning-layout-item size="6">
+
+                    <lightning-input-field field-name={fields.BANK_NAME.fieldApiName} value={bankname}></lightning-input-field>
+
+                    <lightning-input-field field-name={fields.ACCOUNT_NUMBER.fieldApiName} value={acnum}></lightning-input-field>
+
+                    <lightning-input-field field-name={fields.IFSC_CODE.fieldApiName} value={ifscnum}></lightning-input-field>
+
+                    <lightning-input-field field-name={fields.BANK_ADDRESS.fieldApiName} value={bankAdd}></lightning-input-field>
+
+                </lightning-layout-item>
+
+                <!-- Second Column -->
+
+           
+
+            </lightning-layout>
+
+ 
+
+            <div class="slds-m-top_medium">
+
+                <!-- <lightning-button variant="brand" type="submit" label="Save"></lightning-button> -->
+
+            </div>
+
+        </lightning-record-edit-form>
+
+    </div>
+
+</template>

@@ -1,0 +1,33 @@
+<template>
+    <div class="top"> 
+    <div class="travelexpnav"   style="width:300px;">
+        <lightning-vertical-navigation class="green">
+            <lightning-vertical-navigation-section>
+                <lightning-vertical-navigation-item label="Travel" name="Travel" onclick={traveldetails}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Food" name="Food" onclick={fooddetails}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Stay" name="Stay" onclick={staydetails}></lightning-vertical-navigation-item>
+            </lightning-vertical-navigation-section>
+        </lightning-vertical-navigation>
+    </div>
+  
+    <div class="traveldetails">
+        <div class="traveldetails-container">
+          <c-travel-detail-uploader if:true={showtraveldetails} ></c-travel-detail-uploader>
+        </div>
+    </div>
+
+
+    <div class="fooddetails">
+        <div class="fooddetails-container">
+          <c-food-details-uploader if:true={showfooddetails} ></c-food-details-uploader>
+        </div>
+    </div>
+
+
+    <div class="staydetails">
+        <div class="staydetails-container">
+          <c-stay-details-uploader if:true={showstaydetails} ></c-stay-details-uploader>
+        </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <div class="passport">
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name="User__c"
+            layout-type="Full"
+            columns="2"
+            onsuccess={handleSuccess}>
+            <lightning-layout multiple-rows="true">
+                <!-- First Column -->
+                <lightning-layout-item size="6">
+                    <lightning-input-field field-name={fields.PASSNUM_FIELD.fieldApiName} value={passnum}></lightning-input-field>
+                    <lightning-input-field field-name={fields.PASSVALIDTILL_FIELD.fieldApiName} value={passvalidtill}></lightning-input-field>
+                    <lightning-input-field field-name={fields.WORKPERMIT_FIELD.fieldApiName} value={workpermit}></lightning-input-field>
+                </lightning-layout-item>
+                <!-- Second Column -->
+            
+            </lightning-layout>
+
+            <div class="slds-m-top_medium">
+                <!-- <lightning-button variant="brand" type="submit" label="Save"></lightning-button> -->
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

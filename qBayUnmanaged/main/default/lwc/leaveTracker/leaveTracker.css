@@ -1,0 +1,43 @@
+.Head{
+
+    background-color: palegreen;
+    
+}
+
+.sample{
+
+    background-color: rgb(241, 213, 241);
+
+}
+.btn-grad {
+    background-image: linear-gradient(to right, #c2e59c 0%, #64b3f4  51%, #c2e59c  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #080808;
+    text-decoration: none;
+  }
+
+  .leave{
+    /* background-color: rgb(253, 253, 253);
+    font-weight: bold;
+    background-image: linear-gradient(to right,#a0d2eb,#e5eaf5,#845bb3 100%);
+    border-radius: 10px; */
+    font-weight: bold;
+    background-color: #9ec6c9;
+    border-radius: 10px;
+    width: 900px;
+    height: 450px;
+    left: -100px;
+}

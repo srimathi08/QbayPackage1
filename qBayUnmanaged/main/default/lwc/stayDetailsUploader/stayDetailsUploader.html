@@ -1,0 +1,28 @@
+<template>
+    <div class="card-color" style="background-color: #9ec6c9;border-radius: 10px;width: 600px;height: 450px;left: -100px;">
+    <!-- <div class="slds-box slds-theme_default"> -->
+        <!-- <H2>Stay details</H2> -->
+        <div class="slds-grid slds-wrap">
+                         <!-- Left Side -->
+             <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+            <lightning-input type="text" label="Name" onchange={onNameChange}></lightning-input>
+            <lightning-input type="number" data-field="Id" label="Employee Id" onchange={onIdChange}></lightning-input>
+            <lightning-input type="text" label="Designation" onchange={onDesignationChange}></lightning-input>
+            <lightning-input type="text" label="Purpose" onchange={onPurposeChange}></lightning-input>
+             </div>
+
+                         <!-- Right Side -->
+            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+
+            <lightning-input type="date" label="Travel Date From" onchange={onTravelDateFromChange}></lightning-input>
+            <lightning-input type="date" label="Travel Date To" onchange={onTravelDateToChange}></lightning-input>
+            <lightning-input type="number" label="Costs" onchange={onCostsChange}></lightning-input>
+            <lightning-input type="file" onchange={onFileUpload} required name="uploadFile" label="Upload File"></lightning-input>
+            </div>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-button label="Save" onclick={saveStayDetails}></lightning-button>
+        </div>
+    </div>
+<!-- </div> -->
+</template>

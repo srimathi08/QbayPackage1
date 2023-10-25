@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "qBayUnmanaged",
+      "default": true
+    }
+  ],
+  "name": "QbayPackage1",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "58.0"
+}

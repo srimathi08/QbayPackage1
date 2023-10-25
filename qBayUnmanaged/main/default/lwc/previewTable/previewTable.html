@@ -1,0 +1,47 @@
+<template>
+    <div title="Time Tracker Records">
+        <div class="slds-m-around_medium">
+            <template if:true={timeTrackerRecords}>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Serial Number">Serial Number</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Start Time">Start Time</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="End Time">End Time</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Total Hours">Total Hours</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={timeTrackerRecords} for:item="record">
+                            <tr key={record.Id}>
+                                <td data-label="Serial Number">
+                                    <div class="slds-truncate">{record.serialNumber}</div>
+                                </td>
+                                <td data-label="Start Time">
+                                    <div class="slds-truncate" title={record.formattedStartTime}>{record.formattedStartTime}</div>
+                                </td>
+                                <td data-label="End Time">
+                                    <div class="slds-truncate" title={record.formattedEndTime}>{record.formattedEndTime}</div>
+                                </td>
+                                <td data-label="Total Hours">
+                                    <div class="slds-truncate" title={record.Total_Hours__c}>{record.Total_Hours__c}</div>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </template>
+            <template if:false={timeTrackerRecords}>
+                No records found.
+            </template>
+        </div>
+    </div>
+</template>

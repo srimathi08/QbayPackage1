@@ -1,0 +1,29 @@
+<template>
+    <div class="general">
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name="User__c"
+            layout-type="Full"
+            columns="2"
+            onsuccess={handleSuccess}>
+            <lightning-layout multiple-rows="true">
+                <!-- First Column -->
+                <lightning-layout-item size="6">
+                    <lightning-input-field field-name={fields.GENDER_FIELD.fieldApiName} value={gender}></lightning-input-field>
+                    <lightning-input-field field-name={fields.BLOODTYPE_FIELD.fieldApiName} value={bloodtype}></lightning-input-field>
+                    <lightning-input-field field-name={fields.AADHARNUM_FIELD.fieldApiName} value={aadarnum}></lightning-input-field>
+                  
+                </lightning-layout-item>
+                <!-- Second Column -->
+                <lightning-layout-item size="6">
+                    <lightning-input-field field-name={fields.PANNUM_FIELD.fieldApiName} value={pannum}></lightning-input-field> 
+                </lightning-layout-item>
+            
+            </lightning-layout>
+
+            <div class="slds-m-top_medium">
+                <!-- <lightning-button variant="brand" type="submit" label="Save"></lightning-button> -->
+            </div>
+        </lightning-record-edit-form>
+    </div>
+</template>

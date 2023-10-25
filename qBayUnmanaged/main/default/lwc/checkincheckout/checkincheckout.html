@@ -1,0 +1,38 @@
+<template>
+ 
+   <div class="top">
+     <div >
+     <div class="custom-greeting">Hey, {name}👋 
+       <p>Employee Id: {employeeId}</p></div>
+   <div>
+    <lightning-card >
+     <!-- <div class="checkin">
+       <button class="slds-button slds-button_success" onclick={handleCheckIn} disabled={isCheckInDisabled}>Check-In</button>
+     </div>
+     <div class="checkout">
+       <button class="slds-button slds-button_destructive" onclick={handleCheckOut} disabled={isCheckOutDisabled}>Check-Out</button>
+     </div><br><br><br> -->
+   
+     <!-- <div> <br>
+     <div class="container">
+       <div class="left">Start Time: {startTime}</div>
+       <div class="right">End Time: {endTime} </div>
+     </div><br>
+     
+   </div> -->
+   <div class="checkinbutton">
+   <lightning-button label={buttonLabel} onclick={toggleCheckInOut} disabled={buttonDisabled}></lightning-button></div>
+   <div class="starttime">
+    <lightning-input label="Start Time" value={startTime} disabled={isCheckIn}></lightning-input>
+    </div>
+    <div class="endtime">
+    <lightning-input label="End Time" value={endTime} disabled={isCheckOut}></lightning-input>
+  </div>
+  </lightning-card>
+   </div>
+   </div>
+   </div><br>
+   <br>
+
+ <c-preview-table user-name={name}></c-preview-table>
+</template>

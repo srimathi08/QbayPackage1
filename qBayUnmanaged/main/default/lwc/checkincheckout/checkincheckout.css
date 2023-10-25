@@ -1,0 +1,175 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+    color: #0a0a0a;
+    line-height: 1.4;
+  }
+
+
+
+.Name{
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black; 
+}
+.custom-greeting {
+    font-size: 20px;
+    font-family:'Times New Roman';
+    font-weight: bolder; 
+    color: 537477;
+    font-style: Bold;
+   
+     /*margin-left: 15cm;*/ 
+    /* padding-left: 10px;*/     
+}   
+
+
+.checkout{
+
+  position: absolute; /* Position the button absolutely within the container */
+
+  top: 30%; /* Adjust the top position as needed */
+
+  right: 30%; /* Position the button on the right side */
+
+  transform: translate(0, -50%);
+
+}
+
+
+
+.checkin{
+
+  position: absolute; /* Position the button absolutely within the container */
+
+  top: 30%; /* Adjust the top position as needed */
+
+  left: 30%; /* Position the button on the right side */
+
+  transform: translate(0, -50%);
+
+}
+
+.start{
+    position: absolute; /* Position the button absolutely within the container */
+    top: 50%; /* Adjust the top position as needed */
+    left: 30%; /* Position the button on the right side */
+    transform: translate(0, -50%);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+}
+
+.starttime{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    position: relative;
+    top:53px;
+    left:5px;
+}
+
+.endtime{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  position: relative;
+  left: 500px;
+  top: 1px;
+}
+
+.top{
+   /* background-image: linear-gradient(to right,#F4E6F1,#F3A0D7 100%); */
+  /* padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-color: #0a0a0a;
+  background-color: #f7aa6c; */
+
+  background-color: #9ec6c9;
+    border-radius: 10px;
+    width: 950px;
+    height: 200px;
+    left: -100px;
+
+}
+
+.left, .right {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border-color: #0a0a0a;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #0a0a0a;
+}
+
+         
+.Timesheet {
+    background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  .Leavetracker{
+    background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+         
+         
+         
+  .btn-grad {
+    background-image: linear-gradient(to right, #c2e59c 0%, #64b3f4  51%, #c2e59c  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #080808;
+    text-decoration: none;
+  }

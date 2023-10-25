@@ -1,0 +1,69 @@
+<template>
+        <div class="leave">
+            <lightning-record-edit-form
+                record-id={recordId}
+                object-api-name="Leave_Request__c"
+                layout-type="Full"
+                columns="2"
+                mode="edit"
+                onsuccess={handleSuccess}
+            >
+                <lightning-messages></lightning-messages>
+
+                <lightning-layout multiple-rows="true">
+                    <!-- First Column -->
+                    <lightning-layout-item size="6">
+                        <!-- Name Field -->
+                        <lightning-input-field field-name={fields.NAME_FIELD.fieldApiName} value={name}></lightning-input-field>
+
+                        <!-- Employee Id Field -->
+                        <lightning-input-field field-name={fields.EMPLOYEE_ID_FIELD.fieldApiName} value={employeeId}></lightning-input-field>
+
+                        <!-- Leave Type Field -->
+                        <lightning-input-field field-name={fields.LEAVE_TYPE_FIELD.fieldApiName}></lightning-input-field>
+                            <!-- From Field -->
+                            <lightning-input-field field-name={fields.FROM_FIELD.fieldApiName}></lightning-input-field>
+
+                            <!-- To Field -->
+                            <lightning-input-field field-name={fields.TO_FIELD.fieldApiName}></lightning-input-field>
+
+         <!-- Submit Button -->
+         <div class="slds-m-top_medium">
+            <lightning-button  type="submit" label="Save"></lightning-button>
+        </div>
+
+
+                    </lightning-layout-item>
+
+                    <!-- Second Column -->
+                    <lightning-layout-item size="6">
+
+                        
+                         <!-- Leave Count Field -->
+                         <lightning-input-field field-name={fields.LEAVE_COUNT_FIELD.fieldApiName}></lightning-input-field>
+                        
+
+                        <!-- Requesting Field -->
+                        <lightning-input-field field-name={fields.REQUESTING_FIELD.fieldApiName}></lightning-input-field>
+
+                             <!-- Reason Field -->
+                             <lightning-input-field field-name={fields.REASON_FIELD.fieldApiName}></lightning-input-field>
+
+                        <!-- Reporting To Field -->
+                        <lightning-input-field field-name={fields.REPORTING_TO_FIELD.fieldApiName}></lightning-input-field>
+
+                        <!-- Status Field -->
+                        <!-- <lightning-input-field field-name={fields.STATUS_FIELD.fieldApiName} readonly ></lightning-input-field> -->
+
+                                         
+
+                    <!-- Remaining Leave Field -->
+                      <lightning-input-field field-name={fields.REMAINING_LEAVE_FIELD.fieldApiName} readonly></lightning-input-field>
+
+               
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-record-edit-form>
+        </div><br>
+        <c-leave-request-preview-table user-name={name}></c-leave-request-preview-table>
+</template>

@@ -1,0 +1,26 @@
+<template>
+    <div  title="Leave Request Preview Table">
+        <div class="slds-m-around_medium">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr>
+                        <th>Leave Type</th>
+                        <th>Leave Count</th>
+                        <th>Remaining Leave</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={leaveRequests} for:item="request">
+                        <tr key={request.Id}>
+                            <td>{request.Leave_Type__c}</td>
+                            <td>{request.Leave_Count__c}</td>
+                            <td>{request.Remaining_Leave__c}</td>
+                            <td>{request.Status__c}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</template>

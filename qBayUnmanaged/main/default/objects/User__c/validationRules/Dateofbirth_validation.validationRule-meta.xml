@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dateofbirth_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK( Date_Of_Birth__c )), 
+     Date_Of_Birth__c &gt; DATE(YEAR(TODAY()) - 18, MONTH(TODAY()), DAY(TODAY()))  
+)</errorConditionFormula>
+    <errorMessage>The employee is below 18 years of age</errorMessage>
+</ValidationRule>

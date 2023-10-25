@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+    <div class="notice-board">
+        <table class="Org">
+            <thead>
+                <tr>
+                    
+                    <th>ORGANIZATION CHART</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={organization} for:item="organization">
+                    <tr key={organization.Organization_Chart__c}>
+                        
+                        
+                        <td>
+                            <lightning-formatted-rich-text value={organization.Organization_Chart__c}></lightning-formatted-rich-text>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+</lightning-card>
+
+</template>

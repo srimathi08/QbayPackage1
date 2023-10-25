@@ -1,0 +1,64 @@
+<template>
+
+    <!-- <lightning-card > -->
+
+        <div class="employee">
+
+            <lightning-record-edit-form record-id={recordId} object-api-name="User__c" layout-type="Full" columns="4" onsuccess={handleSuccess}>
+
+                <lightning-messages></lightning-messages>
+
+ 
+
+                <lightning-layout multiple-rows="true">
+
+                    <!-- First Column -->
+
+                    <lightning-layout-item size="6" >
+
+                        <lightning-input-field field-name={fields.NAME_FIELD.fieldApiName} value={name} readonly></lightning-input-field>
+
+                        <lightning-input-field field-name={fields.EMPLOYEEID_FIELD.fieldApiName} value={employeeId} readonly ></lightning-input-field>
+
+                        <lightning-input-field field-name={fields.EMAIL_FIELD.fieldApiName} value={email} ></lightning-input-field>
+
+                        <lightning-input-field field-name={fields.DATEOFBIRTH_FIELD.fieldApiName}  value={dateofbirth} readonly ></lightning-input-field>
+
+                    </lightning-layout-item>
+
+ 
+
+                    <!-- Second Column -->
+
+                    <lightning-layout-item size="6" >
+
+                        <lightning-input-field field-name={fields.DESIGINATION.fieldApiName} value={designation} ></lightning-input-field>
+
+                        
+                        <lightning-input-field field-name={fields.GENDER.fieldApiName}  value={gender} readonly ></lightning-input-field>
+
+                        <lightning-input-field field-name={fields.MOBILE.fieldApiName}  value={mobile} ></lightning-input-field>
+
+                        <lightning-input-field field-name={fields.EMECON.fieldApiName} value={emergencynum} ></lightning-input-field>
+<!-- 
+                        <lightning-input-field field-name={fields.AADHAR.fieldApiName}  value={aadarnum} readonly ></lightning-input-field> -->
+
+                    </lightning-layout-item>
+
+                </lightning-layout>
+
+ 
+
+                <div >
+
+                    <!-- <lightning-button variant="brand" type="submit" label="Save"></lightning-button> -->
+
+                </div>
+
+            </lightning-record-edit-form>
+
+        </div>
+
+    <!-- </lightning-card> -->
+
+</template>

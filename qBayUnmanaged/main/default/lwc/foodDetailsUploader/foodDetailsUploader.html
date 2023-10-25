@@ -1,0 +1,31 @@
+<template>
+    <div class="card-color" style=" border-radius: 10px;width: 600px;height: 450px;left: -100px;">
+    <!-- <div class="slds-box slds-theme_default"> -->
+            <div class="slds-grid slds-wrap">
+                <!-- Left Side -->
+                <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+            <form id="foodDetailsFormLeft">
+            <lightning-input type="text" data-field="name" label="Name" onchange={onNameChange}></lightning-input>
+            <lightning-input type="number" data-field="Id" label="Employee Id" onchange={onIdChange}></lightning-input>
+            <lightning-input type="text" data-field="designation" label="Designation" onchange={onDesignationChange}></lightning-input>
+            <lightning-input type="date" data-field="travelDateFrom" label="Travel Date From" onchange={onTravelDateFromChange}></lightning-input>
+                </form>
+            </div>
+
+<!-- Right Side -->
+<div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+    <form id="foodDetailsFormRight">
+        <lightning-input type="date" data-field="travelDateTo" label="Travel Date To" onchange={onTravelDateToChange}></lightning-input>
+            <lightning-input type="number" data-field="cost" label="Cost" onchange={onCostChange}></lightning-input>
+            <lightning-textarea data-field="purpose" name="input3" label="Purpose" onchange={onPurposeChange} placeholder="Type here..."></lightning-textarea>
+            <lightning-input type="file" onchange={onFileUpload} required name="uploadFile" label="Upload File"></lightning-input>
+        </form>
+    </div>
+    </div>
+            
+        <div class="slds-align_absolute-center">
+            <lightning-button label="Save" onclick={saveFoodDetails}></lightning-button>
+        </div>
+    <!-- </div> -->
+</div>
+</template>

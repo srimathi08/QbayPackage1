@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Passport_Number_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(    
+
+ REGEX(        
+
+  passport_Number__c ,         
+
+&quot;^[A-Z][0-9]{7}$&quot;    
+
+ ) )</errorConditionFormula>
+    <errorMessage>Please Enter the correct Passport Number</errorMessage>
+</ValidationRule>

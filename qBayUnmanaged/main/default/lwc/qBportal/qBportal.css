@@ -1,0 +1,384 @@
+/*Apply styles to the container to make it take the full height of the screen*/
+
+.container {
+
+    height: 100%;
+    /* display: flex; */
+}
+
+ /* .top{
+    background-image: linear-gradient(to right,#CBFBFF,#EF96E6 100%);
+
+ } */
+
+/* Make the lightning card fill the entire container */
+
+.container lightning-card {
+
+    height: 100%;
+
+}
+
+.qbay{
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}
+
+.container lightning-modal-body {
+
+    height: 100%;
+
+}
+
+:host .green {
+    --lwc-colorTextDefault: #537477;
+    font-size: 22px;
+    font-weight: bold;
+    font-family:  'Times New Roman';
+    box-sizing: border-box;
+}
+
+
+ 
+.header{
+ 
+    /* background-image: linear-gradient(to right,#142C4C,#4A6E8C 100%); */
+    /* background-color:#9ec6c9;  */
+    --slds-c-modal-header-color-background: #9ec6c9;
+   
+}
+ 
+
+ .header-container {
+    /* background-image: linear-gradient(to right,#CBFBFF,#EF96E6 100%);  */
+     /* background-color:#bfdddf;  */
+     background-color:#9ec6c9; 
+
+
+    /* background-attachment: fixed;
+    display: flex;
+
+    justify-content: space-between;
+
+padding: 0%;
+margin: 0%; */
+
+   
+
+}
+
+ 
+
+.avatar-container {
+    position: absolute;
+    right: 20px;
+    top:10px;
+
+    order: 2;
+
+}
+
+ 
+ 
+
+      /* Add styles to position the leavetracker component */
+
+.leavetracker-container {
+    
+
+    position: absolute;
+
+    top: 93%;
+
+    left: calc(320px + 10px); /* Adjust this value as needed */
+
+    transform: translateY(-50%);
+
+    width: 960px;
+
+}
+
+ 
+
+ 
+
+.timesheetpage-container {
+
+    position: absolute;
+
+    top: 91%;
+
+    left: calc(320px + 10px); /* Adjust this value as needed */
+
+    transform: translateY(-50%);
+
+    width: 960px;
+
+}
+
+ 
+
+/* Update the positioning to align the component to the right and vertically centered */
+
+.checkincheckout-container {
+
+    position: absolute;
+
+    top: 75%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+
+    width: 960px;
+
+}
+
+ 
+
+  .announcement-container{
+
+    position: absolute;
+
+    top: 53%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+
+    width: 320px;
+
+}
+
+ 
+
+.birthdaypage-container{
+
+    position: right;
+
+    top: 26%;
+
+    right: calc(320px + 10px);
+
+    transform: translateY(-50%);
+
+    width: 320px;
+
+}
+
+ 
+
+.birthday{
+
+    position: top;
+
+}
+
+ 
+
+.upcommingleaves-container{
+
+    position: absolute;
+
+    top: 43%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+
+    width: 320px;
+
+}
+
+ 
+
+/* .home{
+
+    display:flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+} */
+
+ 
+
+/* .home {
+
+    top: 35%;
+
+    position: absolute;
+
+    display: flex;
+
+    flex-direction:center;
+
+    align-items: right;
+
+    margin-top: 0px; 
+
+    justify-content: space-between;
+
+    width: 35px;
+
+    left: calc(0px);
+
+ 
+
+} */
+
+ 
+
+/* .home1 {
+
+    top: 26%;
+
+    position: absolute;
+
+    right: 3px;
+
+    width: 35px;
+
+    display: flex;
+
+    flex-direction:center;
+
+    align-items: right;
+
+    margin-top: 15px;
+
+    justify-content: space-between;
+
+    left: calc(650px + 5px);
+
+}
+
+ 
+
+ 
+
+.home2{
+
+    top: 40%;
+
+    position: absolute;
+
+    right: 5px;
+
+    display: flex;
+
+    flex-direction:center;
+
+    align-items: right;
+
+    margin-top: 10px;
+
+    justify-content: space-between;
+
+    width: 35px;
+
+    left: calc(570px + 65px);
+
+ 
+
+}  */
+
+.slds-card{
+
+    /* height:fit-content;
+
+    width: fit-content; */
+    
+    overflow-x: hidden; /* Hide content outside of the parent */
+    background-color: rgb(255, 255, 255);
+}
+
+ 
+
+.parent-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    /* Other styling for your parent container */
+
+}
+
+ 
+
+ .home-container {
+
+    align-self: flex-start;
+
+    margin-top: 20px;
+    /* background-image: linear-gradient(to right,#CBFBFF,#EF96E6 ,#9df9ef,#edf7f6,#ffabb8,#a28089); */
+    /* background-color:#bfdddf; */
+    background-color: #e0f2f3;
+    height:800px;
+    /* overflow: auto; */
+
+
+}
+
+ 
+
+.home-container1 {
+
+    align-self: flex-start;
+
+    margin-top: 20px; 
+}
+
+ 
+
+.home-container2 {
+
+    align-self: flex-start;
+
+    margin-top: 20px;     
+
+} 
+
+.home-container3{
+    align-self: flex-start;
+
+    margin-top: 20px; 
+}
+
+.policy-records{
+position: absolute;
+
+top: 30%;
+
+margin-top: 25rem;
+
+left: calc(320px + 10px);
+
+transform: translateY(-50%);
+
+width: 320px;
+}
+    
+.personalInfonav-container{
+    /* background-color: white; */
+    position: absolute;
+     top: 58%;
+     left: calc(320px + 5px);
+     height: 28rem;
+     width: 20px;
+
+transform: translateY(-50%);
+}
+
+.claim-container{
+    position: absolute;
+    top: 58%;
+    left: calc(320px + 5px);
+    height: 28rem;
+    width: 20px;
+
+transform: translateY(-50%);
+}

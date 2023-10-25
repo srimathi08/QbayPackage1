@@ -1,0 +1,74 @@
+.slds-m-around_medium{
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 250px;
+    max-width: 55rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 6px) {
+    table {
+        border: 0;
+    }
+
+    table thead tr {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: fixed;
+        width: 1px;
+        display: banner;
+
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* max-height: 300px;  */
+
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0feff7ce;
+}
+
+/* Optional styling for hover effect */
+tr:hover {
+    background-color: #2bda9f;
+    cursor: pointer;
+}

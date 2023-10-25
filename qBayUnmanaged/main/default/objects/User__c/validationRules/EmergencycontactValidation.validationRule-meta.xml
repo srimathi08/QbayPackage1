@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmergencycontactValidation</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+  ISBLANK( Emergency_Contact__c ), 
+  NOT(ISBLANK(Mother_s_Contact_No__c  )),  
+   Emergency_Contact__c =   Mother_s_Contact_No__c 
+)</errorConditionFormula>
+    <errorMessage>Mobile number  and emergency number are same 
+Emergency number should be different.</errorMessage>
+</ValidationRule>

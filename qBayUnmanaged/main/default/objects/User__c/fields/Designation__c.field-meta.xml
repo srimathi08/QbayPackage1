@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Designation__c</fullName>
+    <externalId>false</externalId>
+    <label>Designation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Managing Director</fullName>
+                <default>false</default>
+                <label>Managing Director</label>
+            </value>
+            <value>
+                <fullName>Team Lead</fullName>
+                <default>false</default>
+                <label>Team Lead</label>
+            </value>
+            <value>
+                <fullName>Associate consultant</fullName>
+                <default>false</default>
+                <label>Associate consultant</label>
+            </value>
+            <value>
+                <fullName>Software Testing Engineer</fullName>
+                <default>false</default>
+                <label>Software Testing Engineer</label>
+            </value>
+            <value>
+                <fullName>Senior Consultant</fullName>
+                <default>false</default>
+                <label>Senior Consultant</label>
+            </value>
+            <value>
+                <fullName>Trainee Consultant</fullName>
+                <default>false</default>
+                <label>Trainee Consultant</label>
+            </value>
+            <value>
+                <fullName>Consultant - Oracle</fullName>
+                <default>false</default>
+                <label>Consultant - Oracle</label>
+            </value>
+            <value>
+                <fullName>Trainee - Oracle</fullName>
+                <default>false</default>
+                <label>Trainee - Oracle</label>
+            </value>
+            <value>
+                <fullName>Trainee - RPA</fullName>
+                <default>false</default>
+                <label>Trainee - RPA</label>
+            </value>
+            <value>
+                <fullName>Delivery Head</fullName>
+                <default>false</default>
+                <label>Delivery Head</label>
+            </value>
+            <value>
+                <fullName>Tech Lead</fullName>
+                <default>false</default>
+                <label>Tech Lead</label>
+            </value>
+            <value>
+                <fullName>Office Assistant</fullName>
+                <default>false</default>
+                <label>Office Assistant</label>
+            </value>
+            <value>
+                <fullName>Operations Manager</fullName>
+                <default>false</default>
+                <label>Operations Manager</label>
+            </value>
+            <value>
+                <fullName>HR Manager</fullName>
+                <default>false</default>
+                <label>HR Manager</label>
+            </value>
+            <value>
+                <fullName>Software Test Engineer</fullName>
+                <default>false</default>
+                <label>Software Test Engineer</label>
+            </value>
+            <value>
+                <fullName>Sr. Manager Finance</fullName>
+                <default>false</default>
+                <label>Sr. Manager Finance</label>
+            </value>
+            <value>
+                <fullName>Sr. Finance Executive</fullName>
+                <default>false</default>
+                <label>Sr. Finance Executive</label>
+            </value>
+            <value>
+                <fullName>Trainee - SFDC</fullName>
+                <default>false</default>
+                <label>Trainee - SFDC</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Sr. Oracle Functional Consultant</fullName>
+                <default>false</default>
+                <label>Sr. Oracle Functional Consultant</label>
+            </value>
+            <value>
+                <fullName>HR Executive</fullName>
+                <default>false</default>
+                <label>HR Executive</label>
+            </value>
+            <value>
+                <fullName>Software Engineer</fullName>
+                <default>false</default>
+                <label>Software Engineer</label>
+            </value>
+            <value>
+                <fullName>Software consultant</fullName>
+                <default>false</default>
+                <label>Software consultant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,95 @@
+<template>
+   
+    <div > 
+        <div class="home-container">
+    <lightning-modal-header class="slds-m-top_none header">
+        <div class="header-container">
+            <div class="Companylogo slds-text-align_left">
+                <!-- <img if:true={companylogoSrc} src={companylogoSrc} alt="Company Logo" /> -->
+            </div>
+
+           <div class="qbay"> <P>QBAY PORTAL</P></div>
+            <div class="avatar-container" >
+               
+                <lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" class="avatar-container" onclick={handleLogout}></lightning-avatar>
+            
+            </div>
+            
+        </div>
+    </lightning-modal-header>
+
+    
+        <div  style="width: 320px">
+                
+                    <lightning-vertical-navigation-section class="green">
+                        <lightning-vertical-navigation-item label="Personal Info" name="PersonalInfoNav" onclick={personalinfonav}  ></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="Dashboard" name="home" onclick={homepage}></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="Attendance" name="checkin/Checkout" onclick={checkincheckout} ></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="Leave Request" name="leaveTracker" onclick={leavetracker} ></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="Timesheet" name="timesheetPage" onclick={timesheetpage}  ></lightning-vertical-navigation-item>
+                        <lightning-vertical-navigation-item label="Claim" name="claim" onclick={claiminfo} ></lightning-vertical-navigation-item>
+  
+                    </lightning-vertical-navigation-section>
+          
+            </div>
+
+                <div class="container">
+
+                    <div class="home-container">
+                    <!-- <div class="content"> -->
+                    <c-announcement class="announcement-container" if:true={showannouncement}></c-announcement>
+                <!-- </div> -->
+            </div>
+
+                <div class="home-container1">
+
+                    <c-birthdaypage class="birthdaypage-container" if:true={showbirthdaypage}></c-birthdaypage>
+                </div>
+
+                <div class="home-container2">
+                    <c-upcomming-leaves class="upcommingleaves-container" if:true={showupcommingleaves}></c-upcomming-leaves>
+                </div>
+
+                <div class="home-container3">
+                    <c-policy-records class="policy-records" if:true={showupcommingleaves}></c-policy-records>
+                </div>
+    </div>  
+
+       
+
+        <div class="comone">
+            <div class="checkincheckout-container">
+              <c-checkincheckout if:true={showcheckincheckout} ></c-checkincheckout>
+            </div>
+        </div>
+        <div class="comtwo">
+            <div class="leavetracker-container">
+            <c-leave-tracker if:true={showleavetracker} ></c-leave-tracker>
+        </div>
+        </div>
+        <div class="comthree">
+            <div class="timesheetpage-container">
+                <c-timesheetpage if:true={showtimesheetpage}></c-timesheetpage>
+            </div>
+        </div>  
+
+        <div class="comfour">
+            <div class="personalInfonav-container">
+                <c-personal-info-navigationbar if:true={showpersonalinfonav}></c-personal-info-navigationbar>
+            </div>
+        </div> 
+            
+
+        <div class="comfour">
+            <div class="claim-container">
+                <c-claiminfo if:true={showclaiminfo}></c-claiminfo>
+            </div>
+        </div> 
+
+
+
+        
+            </div>
+         </div> 
+   
+</template>

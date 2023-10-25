@@ -1,0 +1,17 @@
+.para{
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-left: 4rem;
+    position: relative;
+    width: 10rem;
+  }
+
+  .upcoming-leaves-table-container{
+    background-color: rgb(135, 202, 247);
+    max-height: 300px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    position: absolute;
+    flex-flow: row wrap;
+    margin-left: 1rem;
+    width: 20rem;
+}

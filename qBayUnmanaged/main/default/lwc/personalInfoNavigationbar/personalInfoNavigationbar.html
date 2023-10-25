@@ -1,0 +1,65 @@
+<template>
+  <div class="top"> 
+    <!-- <lightning-card> -->
+    <div class="personalinfonav"   style="width:300px;">
+        <lightning-vertical-navigation>
+          <!-- personal info navigation bar -->
+            <lightning-vertical-navigation-section class="green">
+                <lightning-vertical-navigation-item label="Employee" name="Employee Info" onclick={employeeinfo}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Education" name="Education Details" onclick={educationinfo}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Work Experience" name="Work Experience" onclick={workexperienceinfo}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Passport" name="Passport Details" onclick={passportinfo}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Family" name="Family Details" onclick={familyinfo}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="Bank" name="Bank Details" onclick={bankinfo}></lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item label="General" name="General Info" onclick={generalinfo}></lightning-vertical-navigation-item>
+            </lightning-vertical-navigation-section>
+        </lightning-vertical-navigation>
+    </div>
+
+
+    <div class="employeeinfo">
+        <div class="emloyee-container">
+          <c-employeeinfo if:true={showemployeeinfo} ></c-employeeinfo>
+        </div>
+    </div>
+
+
+    <div class="educationinfo">
+        <div class="educationinfo-container">
+          <c-educationinfo if:true={showeducationinfo} ></c-educationinfo>
+        </div>
+    </div>
+
+    <div class="workexperienceinfo">
+        <div class="workexperienceinfo-container">
+          <c-workexperienceinfo if:true={showworkexperienceinfo} ></c-workexperienceinfo>
+        </div>
+    </div>
+
+    <div class="passportinfo">
+        <div class="passportinfo-container">
+          <c-passportinfo if:true={showpassportinfo} ></c-passportinfo>
+        </div>
+    </div>
+
+    <div class="familyinfo">
+        <div class="familyinfo-container">
+          <c-familyinfo if:true={showefamilyinfo} ></c-familyinfo>
+        </div>
+    </div>
+
+    <div class="bankinfo">
+        <div class="bankinfo-container">
+          <c-bankinfo if:true={showbankinfo} ></c-bankinfo>
+        </div>
+    </div>
+
+    <div class="generalinfo">
+        <div class="generalinfo-container">
+          <c-generalinfo if:true={showgeneralinfo} ></c-generalinfo>
+        </div>
+    </div>
+
+
+</div>
+</template>

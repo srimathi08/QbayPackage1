@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aadarcard_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(   AND(    
+
+ LEN( Aadhar_Card_Number__c ) &gt;= 12,    
+
+ NOT(BEGINS( Aadhar_Card_Number__c , &apos;0&apos;)) 
+
+ ) )</errorConditionFormula>
+    <errorMessage>Invalid Aadhar Number</errorMessage>
+</ValidationRule>

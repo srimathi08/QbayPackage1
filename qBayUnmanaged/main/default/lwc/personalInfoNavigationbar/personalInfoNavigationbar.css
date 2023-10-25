@@ -1,0 +1,141 @@
+/* .emloyee-container{
+    height: 12rem;
+    width: 30rem;
+    top:0%;
+} */
+:host .green {
+    --lwc-colorTextDefault: #658c8f;
+    font-size: 20px;
+    font-family:  'Times New Roman';
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.top{
+    /* background-image: linear-gradient(to right,#CBFBFF,#EF96E6 100%);  */
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #658c8f;
+    box-sizing: border-box;
+    width: 5px;
+}
+
+.personalinfonav{
+    /* background-image: linear-gradient(to right,#fafdff,#f1f4fa,#f4f2f7 100%); */
+    position: relative;
+    border-radius: 10px;
+    top: px;
+    height: 475px;
+}
+
+.emloyee-container,.educationinfo-container,.workexperienceinfo-container,.passportinfo-container,
+.familyinfo-container,.bankinfo-container,.generalinfo-container {
+  
+    position: absolute;
+
+    top: 242px;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+}
+
+/* .educationinfo-container {
+    background-color: rgb(253, 253, 253);
+
+    position: absolute;
+
+    top: 46%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+}
+
+.workexperienceinfo-container{
+    background-color: rgb(253, 253, 253);
+
+    position: absolute;
+
+    top: 46%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+}
+
+.passportinfo-container {
+    background-color: rgb(253, 253, 253);
+
+    position: absolute;
+
+    top: 46%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+}
+
+.familyinfo-container{
+    background-color: rgb(253, 253, 253);
+
+    position: absolute;
+
+    top: 46%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+}
+
+.bankinfo-container {
+    background-color: rgb(253, 253, 253);
+
+    position: absolute;
+
+    top: 46%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+}
+
+.generalinfo-container {
+    background-color: rgb(253, 253, 253);
+
+    position: absolute;
+
+    top: 46%;
+
+    left: calc(320px + 10px);
+
+    transform: translateY(-50%);
+    height: auto;
+
+    width: 500px;
+
+} */

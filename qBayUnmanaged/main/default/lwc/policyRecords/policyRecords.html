@@ -1,0 +1,25 @@
+<template>
+    <div class="para"> <p>PDF Uploader Records</p></div>
+    <!-- <lightning-card> -->
+        <div class="slds-card">
+        <div class="upcoming-leaves-table-container">
+
+        <template if:true={pdfUploaders}>
+            <ul class="slds-m-around_medium">
+                <template for:each={pdfUploaders} for:item="pdfUploader">
+                    <li key={pdfUploader.Id} class="slds-m-bottom_medium">
+                        <a onclick={navigateToRecord} data-record-id={pdfUploader.Id}>
+                            {pdfUploader.Name}
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:false={pdfUploaders}>
+            No records found.
+        </template>
+        </div>
+    </div>
+
+    <!-- </lightning-card> -->
+</template>

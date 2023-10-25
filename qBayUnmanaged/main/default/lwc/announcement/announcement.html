@@ -1,0 +1,68 @@
+<template>
+
+    <!-- <lightning-card> -->
+        
+       <div class="para"> <p>ANNOUNCEMENT</p></div>
+    <div class="notice-board">
+
+        <div class="announcement-table-container">
+
+           
+            
+
+        <table class="announcement-table">
+
+            <thead>
+               
+                <tr>
+
+                    <th>Date</th>
+
+                    <th>Announcement</th>
+
+                    <th>Image</th>
+
+                </tr>
+
+            </thead>
+
+           
+
+            <tbody>
+
+                <template for:each={announcements} for:item="announcement">
+
+                    <tr key={announcement.Id}>
+
+
+                        <td>{announcement.Date__c}</td>
+
+                        <td>{announcement.Announcements__c}</td>
+
+                       
+
+                        <td>
+
+                            <lightning-formatted-rich-text value={announcement.Image__c}></lightning-formatted-rich-text>
+
+                        </td>
+
+                    </tr>
+
+                </template>
+
+            </tbody>
+
+        </table>
+    
+
+    </div>
+
+    </div>
+
+
+    
+<!-- </lightning-card> -->
+
+
+</template>

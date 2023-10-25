@@ -1,0 +1,64 @@
+<template>
+    <div class="para"> <p>UPCOMING HOLIDAYS</p></div>
+
+    <div class="btn-grad">
+    <div class="upcoming-leaves-table-container">
+    <table class="upcoming-leaves-table">
+    <thead>
+    <tr>
+    <th colspan="2">
+    <div class="filter-container">
+    <label for="monthFilter">Select Month:</label>
+    <div class="month-picklist-container">
+    <select id="monthFilter" onchange={handleMonthChange}>
+    <!-- Options here -->
+    <option value="">All Months</option>
+
+    <option value="01">January</option>
+
+    <option value="02">February</option>
+
+    <option value="03">March</option>
+
+    <option value="04">April</option>
+
+    <option value="05">May</option>
+
+    <option value="06">June</option>
+
+    <option value="07">July</option>
+
+    <option value="08">August</option>
+
+    <option value="09">September</option>
+
+    <option value="10">October</option>
+
+    <option value="11">November</option>
+
+    <option value="12">December</option>
+
+    </select>
+    </div>
+    </div>
+    </th>
+    </tr>
+    </thead>
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Date</th>
+    </tr>
+    </thead>
+    <tbody>
+        <template for:each={filteredUpcomingLeaves} for:item="leave">
+            <tr key={leave.Id}>
+                <td>{leave.Name}</td>
+                <td>{leave.FormattedStartDate}</td>
+            </tr>
+        </template>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </template>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Assignment_to_assigned_user</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT(
+
+    OR(
+
+        Project_Name__r.Employee_1__r.Name = Name__c,  
+
+         Project_Name__r.Employee_2__r.Name = Name__c,  
+
+         Project_Name__r.Employee_3__r.Name = Name__c ,
+
+         Project_Name__r.Employee_4__r.Name = Name__c ,
+
+         Project_Name__r.Employee_5__r.Name = Name__c ,
+
+        Project_Name__r.Project_Manager__r.Name = Name__c
+
+    )
+
+)</errorConditionFormula>
+    <errorMessage>You are not assigned to the project.</errorMessage>
+</ValidationRule>

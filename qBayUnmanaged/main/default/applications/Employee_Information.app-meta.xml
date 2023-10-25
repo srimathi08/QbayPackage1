@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Employee Information</label>
+    <navType>Standard</navType>
+    <tabs>User__c</tabs>
+    <tabs>Time_Tracker__c</tabs>
+    <tabs>Leave_Request__c</tabs>
+    <tabs>Project__c</tabs>
+    <tabs>Travel_Detail__c</tabs>
+    <tabs>Food_Details__c</tabs>
+    <tabs>Stay_Details__c</tabs>
+    <tabs>Exit_Details__c</tabs>
+    <tabs>Qbay_Dashboard</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Timesheet__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Employee_Information_UtilityBar</utilityBar>
+</CustomApplication>

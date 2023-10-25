@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>To_check_if_the_contact_no_ischanged</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+   ISCHANGED(P_Mobile__c),
+   ISCHANGED(Emergency_Contact__c),
+   ISCHANGED(w_Contact_No__c),
+   ISCHANGED(Father_s_Contact_No__c),
+   ISCHANGED(Mother_s_Contact_No__c),
+   ISCHANGED(Spouse_s_Contact_No__c)
+)</errorConditionFormula>
+    <errorMessage>The Contact Number is Edited</errorMessage>
+</ValidationRule>

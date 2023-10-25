@@ -1,0 +1,20 @@
+.org {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.org th,
+.org td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.org th {
+    background-color: #58b9e6;
+}
+
+.org img {
+    max-width: 100%;
+    height: auto;
+}

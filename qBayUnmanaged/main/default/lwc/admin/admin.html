@@ -1,0 +1,16 @@
+<!-- myComponent.html -->
+<template>
+    <div class="container">
+        <lightning-combobox label="Report Type" value={objectName} onchange={handleObjectChange} options={objectOptions}></lightning-combobox>
+        <lightning-input label="Employee Id" type="string" value={employeeid} onchange={handleemployeeidChange}></lightning-input>
+        <lightning-input label="Name" value={name} onchange={handleNameChange}></lightning-input>
+        <lightning-input type="date" label="Start Date" value={startDate} onchange={handleDateChange}></lightning-input>
+        <lightning-input type="date" label="End Date" value={endDate} onchange={handledateEnd}></lightning-input>
+        <div class="button-container">
+            <lightning-button class="search-button" label="Search" onclick={handleSearch}></lightning-button>
+            <lightning-button-icon class="download-button" icon-name="utility:download" alternative-text="Download" onclick={handleDownload}></lightning-button-icon>
+        </div>
+
+        <lightning-datatable data={records} columns={columns} key-field="id"></lightning-datatable>
+    </div>
+</template>

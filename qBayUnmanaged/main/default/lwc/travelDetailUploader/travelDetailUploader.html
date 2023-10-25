@@ -1,0 +1,66 @@
+<template>
+    <div class="card-color" style="background-color: #9ec6c9;border-radius: 10px;width: 600px;height: 450px;left: -100px;">
+
+        <!-- <h3>Travel Details</h3> -->
+
+        <div class="slds-grid slds-wrap">
+            <!-- Left Side -->
+            <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+            <lightning-input type="text" label="Name" onchange={onNameChange} ></lightning-input>
+
+            <lightning-input type="number" label="Employee ID" onchange={onEmployeeIdChange}></lightning-input>
+
+            <lightning-input type="text" label="Designation" onchange={onDesignationChange}></lightning-input>
+
+            <lightning-textarea name="input4" label="Purpose" onchange={onPurposeChange}
+
+                placeholder="Type here..."></lightning-textarea>
+
+            <lightning-input type="date" label="Travel Date From" onchange={onTravelDateFromChange}></lightning-input>
+
+            <lightning-input type="date" label="Travel Date To" onchange={onTravelDateToChange}></lightning-input>
+
+            </div>
+
+             <!-- Right Side -->
+             <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+            <lightning-combobox
+
+            name="modeOfTravel"
+
+            label="Mode of Travel"
+
+            value={modeOfTravel}
+
+            options={modeOfTravelOptions}
+
+            onchange={handleModeOfTravelChange}
+
+        ></lightning-combobox>
+
+            <lightning-input type="text" label="Accompanying Person" onchange={onAccompanyPersonChange}></lightning-input>
+
+            <lightning-input type="text" label="Travel From Address" onchange={onTravelFromAddressChange}></lightning-input>
+
+            <lightning-input type="text" label="Travel To Address" onchange={onTravelToAddressChange}></lightning-input>
+
+            <lightning-input type="number" label="Costs" onchange={onCostsChange}></lightning-input>
+
+            <lightning-input type="file" onchange={onFileUpload} required name="uploadFile" label="Upload File">
+
+            </lightning-input>
+             </div>
+
+        </div>
+
+        <div class="slds-align_absolute-center">
+
+            <lightning-button label="Save" onclick={saveTravelDetail}>
+
+            </lightning-button>
+
+        </div>
+
+    </div>
+
+</template>

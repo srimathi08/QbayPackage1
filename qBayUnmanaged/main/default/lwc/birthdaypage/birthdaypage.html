@@ -1,0 +1,25 @@
+<template>
+    <div>
+        <h2>Employee Birthdays</h2>
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="slds-text-title_caps" scope="col">
+                        Name
+                    </th>
+                    <th class="slds-text-title_caps" scope="col">
+                        Birth Date
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={employeeData} for:item="employee">
+                    <tr key={employee.Id}>
+                        <td data-label="Name">{employee.Name}</td>
+                        <td data-label="Birth Date">{employee.formattedDateOfBirth}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+</template>
